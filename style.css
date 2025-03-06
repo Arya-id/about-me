@@ -41,4 +41,8 @@ nav a {
     height: 500px;
     border-radius: 50%;
     object-fit: cover;
+    max-width: 100%;
+    display: block;
+    margin: auto;
+
 }
