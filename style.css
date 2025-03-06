@@ -6,7 +6,7 @@ img {
 
 body {
     background-color: whitesmoke;
-    font-family: 'Times New Roman', serif;
+    font-family: Georgia, 'Times New Roman', Times, serif
     margin: 10px;
     padding: 10px;
 }
@@ -46,3 +46,26 @@ nav a {
     margin: auto;
 
 }
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 2s ease-out 1s forwards;
+}
+.fade-in-fast {
+    animation: fadeIn 1s ease-out;
+}
+.fade-in-slow {
+    opacity: 0;
+    animation: fadeIn 2s ease-out 2.25s forwards;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
